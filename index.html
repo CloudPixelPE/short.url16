@@ -133,7 +133,7 @@
 	</script>
 
 	<script>
-		var issuesUrl = "https://api.github.com/repos/ghurl/db/issues";
+		var issuesUrl = "https://api.github.com/repos/CloudPixelPE/db/issues";
 
 		var getJson = function(url, cb) {
 			var r = new XMLHttpRequest();
@@ -164,7 +164,7 @@
 			if (nextN) {
 				body += encodeURIComponent("\n\nIf nobody beats you to it, your URL will be:  https://ghurl.github.io/?" + nextN);
 			}
-			var url = 'https://github.com/ghurl/db/issues/new?title=' + title + '&body=' + body;
+			var url = 'https://github.com/CloudPixelPE/db/issues/new?title=' + title + '&body=' + body;
 			window.open(url, '_blank');
 			return false;
 		};
