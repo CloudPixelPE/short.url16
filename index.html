@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>ghurl</title>
+	<title>VexterLabs</title>
 
 	<style>
 		body {
@@ -194,7 +194,7 @@
 				for(i = 0; i < json.length; i++) {
 					var number = json[i].number;
 					var url = fixUrl(json[i].title);
-					var short = 'cloudpixelpe.github.io/?' + number;
+					var short = 'vexterstore.netlify.com/?' + number;
 					var li = document.createElement('li');
 					var a = document.createElement('a');
 					a.href = 'https://' + short;
@@ -218,7 +218,7 @@
 	</script>
 
 	<div id="container">
-		<h1><a href="/">ghurl</a></h1>
+		<h1><a href="/">VexterLabs</a></h1>
 
 		<section class="unk">
 			<p>Loading...</p>
@@ -226,11 +226,11 @@
 
 		<section class="explain">
 			<p>
-				Proof of concept URL shortener with no back-end servers (apart from GitHub's!).
+				Proof of concept URL shortener with no back-end servers (apart from VexterLabs's!).
 			</p>
 			<ol>
 				<li>
-					Create an issue on the <a href="https://github.com/ghurl/db/issues">ghurl/db</a> repository.
+					Create an issue on the repository.
 					The <strong>title</strong> of the issue should be the URL you want to redirect to.
 					<p>
 						<form onSubmit="return handleSubmit();">
@@ -242,7 +242,7 @@
 				<li>Note <strong>n</strong>, the <strong>issue's number</strong>.</li>
 				<li>
 					Construct your shortened URL using <strong>n</strong>:
-					<code>https://ghurl.github.io/?n</code>
+					<code>https://vextershort.netlify.com?n</code>
 				</li>
 			</ol>
 			<p>
