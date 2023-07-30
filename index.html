@@ -160,9 +160,9 @@
 		var handleSubmit = function(e) {
 			if (e && e.preventDefault) e.preventDefault();
 			var title = encodeURIComponent(document.getElementById('ipt').value);
-			var body = encodeURIComponent("After creating the issue, construct your shortened URL using n, the issue's number:  https://ghurl.github.io/?n");
+			var body = encodeURIComponent("After creating the issue, construct your shortened URL using n, the issue's number:  https://vextershort.netlify.com/?n");
 			if (nextN) {
-				body += encodeURIComponent("\n\nIf nobody beats you to it, your URL will be:  https://ghurl.github.io/?" + nextN);
+				body += encodeURIComponent("\n\nIf nobody beats you to it, your URL will be: https://vextershort.netlify.com/?" + nextN);
 			}
 			var url = 'https://github.com/CloudPixelPE/db/issues/new?title=' + title + '&body=' + body;
 			window.open(url, '_blank');
