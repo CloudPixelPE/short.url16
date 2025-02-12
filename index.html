@@ -194,7 +194,7 @@
 				for(i = 0; i < json.length; i++) {
 					var number = json[i].number;
 					var url = fixUrl(json[i].title);
-					var short = 'vextershort.netlify.com/?' + number;
+					var short = 'vextershorts.netlify.app/?' + number;
 					var li = document.createElement('li');
 					var a = document.createElement('a');
 					a.href = 'https://' + short;
@@ -226,7 +226,7 @@
 
 		<section class="explain">
 			<p>
-				Proof of concept URL shortener with no back-end servers (apart from VexterLabs's!).
+				Proof of concept URL shortener with no back-end servers (apart from VexterLabs Studios!).
 			</p>
 			<ol>
 				<li>
@@ -243,7 +243,7 @@
 				<li>Note <strong>n</strong>, the <strong>issue's number</strong>.</li>
 				<li>
 					Construct your shortened URL using <strong>n</strong>:
-					<code>https://vextershort.netlify.com?n</code>
+					<code>https://vextershorts.netlify.app?n</code>
 				</li>
 			</ol>
 			<p>
