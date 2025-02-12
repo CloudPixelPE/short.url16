@@ -128,7 +128,7 @@
 			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-		ga('create', 'UA-38564882-9', 'ghurl.github.io');
+		ga('create', 'UA-38564882-9', 'vextershorts.netlify.app');
 		ga('send', 'pageview');
 	</script>
 
@@ -160,9 +160,9 @@
 		var handleSubmit = function(e) {
 			if (e && e.preventDefault) e.preventDefault();
 			var title = encodeURIComponent(document.getElementById('ipt').value);
-			var body = encodeURIComponent("After creating the issue, construct your shortened URL using n, the issue's number:  https://vextershort.netlify.com/?n");
+			var body = encodeURIComponent("After creating the issue, construct your shortened URL using n, the issue's number:  https://vextershorts.netlify.app/?n");
 			if (nextN) {
-				body += encodeURIComponent("\n\nIf nobody beats you to it, your URL will be: https://vextershort.netlify.com/?" + nextN);
+				body += encodeURIComponent("\n\nIf nobody beats you to it, your URL will be: https://vextershorts.netlify.app/?" + nextN);
 			}
 			var url = 'https://github.com/CloudPixelPE/db/issues/new?title=' + title + '&body=' + body;
 			window.open(url, '_blank');
@@ -260,8 +260,8 @@
 				Oops, I think that's a bad URL.
 			</p>
 			<p>
-				Correct URLs are in the format <code>https://ghurl.github.io/?n</code>,
-				where n is an issue on the <a href="https://github.com/ghurl/db/issues">ghurl/db</a> repository.
+				Correct URLs are in the format <code>https://vextershorts.netlify.app/?n</code>,
+				where n is an issue on the <a href="https://github.com/VexterLabs/db/issues">VexterLabs/db</a> repository.
 				The title of the issue is used as the URL to redirect.
 			</p>
 			<p>
